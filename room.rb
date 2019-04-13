@@ -13,6 +13,9 @@ class Room
     @capacity += guest
   end
 
+  def check_out_guest(guest)
+    @capacity -= guest
+  end
 
 end
 #
