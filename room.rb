@@ -9,12 +9,9 @@ class Room
     @capacity = capacity
   end
 
-
-
-
-  # def check_in_guest(name,capacity)
-  #   @capacity += room.name
-  # end
+  def check_in_guest(guest)
+    @capacity += guest
+  end
 
 
 end
