@@ -28,4 +28,9 @@ class RoomTest < MiniTest:: Test
     assert_equal(0, @room.capacity)
   end
 
+  def test_song_to_room
+    @room.add_song_to_room(@Track1)
+    assert_equal("", @room.song)
+  end
+
 end

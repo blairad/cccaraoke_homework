@@ -1,9 +1,9 @@
 class Song
 
-  attr_reader :song
+  attr_reader :playlist
 
-  def initialize(song)
-    @song = song
+  def initialize(playlist)
+    @playlist = playlist
   end
 
 end

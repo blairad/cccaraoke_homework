@@ -17,5 +17,9 @@ class Room
     @capacity -= guest
   end
 
+  def add_song_to_room(song)
+    @room += song
+  end
+
 end
 #
