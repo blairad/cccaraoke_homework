@@ -5,13 +5,14 @@ require_relative("../song.rb")
 class SongTest < MiniTest:: Test
 
   def setup
-    playlist = ["Son of a Preacherman","Go West","No Limit"]
-    @playlist = Song.new(playlist)
+    @song1 = Song.new("Son of a Preacherman")
+    @song2 = Song.new("Go West")
+    @song3 = Song.new("No Limit")
+   
   end
 
   def test_is_a_song
-      @playlist = Song.new(2)
-      assert_equal(2, @playlist.playlist())
+      assert_equal("Son of a Preacherman", @song1.title)
   end
 
 
